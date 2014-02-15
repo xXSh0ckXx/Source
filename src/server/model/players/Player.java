@@ -48,6 +48,12 @@ public abstract class Player {
 			tzhaarKilled = 0, waveId, frozenBy = 0, poisonDamage = 0,
 			teleAction = 0, bonusAttack = 0, lastNpcAttacked = 0,
 			killCount = 0;
+			
+	
+	//KS
+	
+	public int KS = 0;
+	
 	public String clanName, properName;
 	public int[] voidStatus = new int[5];
 	public int[] itemKeptId = new int[4];
