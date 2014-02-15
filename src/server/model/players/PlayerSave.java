@@ -75,6 +75,8 @@ public class PlayerSave {
 								: Integer.parseInt(token2));
 					} else if (token.equals("character-rights")) {
 						p.playerRights = Integer.parseInt(token2);
+					} else if (token.equals("KS")) {
+						p.KS = integer.parsteInt(token2);
 					} else if (token.equals("tutorial-progress")) {
 						p.tutorial = Integer.parseInt(token2);
 					} else if (token.equals("crystal-bow-shots")) {
@@ -254,6 +256,9 @@ public class PlayerSave {
 			characterfile.write("character-height = ", 0, 19);
 			characterfile.write(Integer.toString(p.heightLevel), 0, Integer
 					.toString(p.heightLevel).length());
+			characterfile.newLine();
+			characterfile.write("KS = ", 0, 6);
+			characterfile.write(Integer.toString(p.KS), 0, Integer.toString(p.KS).length());
 			characterfile.newLine();
 			characterfile.write("character-posx = ", 0, 17);
 			characterfile.write(Integer.toString(p.absX), 0,
